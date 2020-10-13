@@ -3,7 +3,7 @@ function fetchCountries(searchQuery) {
 
     return fetch(url)
         .then(response => response.json())
-        .then(data => data)
+        .catch(error => console.log(error));
 };
 
 export default fetchCountries;

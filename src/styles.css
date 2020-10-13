@@ -26,6 +26,8 @@ body {
   max-width: 1024px;
   padding: 30px;
   margin: 0 auto;
+  position: relative;
+  height: 100%;
 }
 
 .country__title {
@@ -57,4 +59,17 @@ body {
   width: 500px;
   margin: 0 auto;
   text-align: left;
+}
+
+.js-flag__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.2;
+  z-index: -1000;
 }
